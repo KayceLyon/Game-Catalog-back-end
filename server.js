@@ -4,8 +4,13 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express()
 
+const gamesController = require('./controllers/gamesController')
+
 app.use(express.json());
 app.use(cors());
+
+app.use('/games', gamesController)
+
 
 let PORT = 3000;
 if(process.env.PORT){
