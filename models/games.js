@@ -3,8 +3,8 @@ const Schema = mongoose.Schema
 
 const gameSchema =  new Schema ({
     title: String,
-    creator: String,
-    studio: String,
+    developer: String,
+    publisher: String,
     genre: String,
     image: String,
 })
