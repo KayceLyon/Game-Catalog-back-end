@@ -26,7 +26,7 @@ router.get('/:id', (req, res)=>{
 
 
 // EDIT Game 
-router.get('/:id/edit', (req, res)=>{
+router.get('/edit/:id', (req, res)=>{
     Games.findById(req.params.id, (err, editGame)=>{
         res.json(editGame)
     })
