@@ -27,9 +27,7 @@ app.listen(PORT, ()=>{
 })
 
 mongoose.connect('mongodb+srv://QGonz95:.ZybZjMEVB96uAj@sei.eg7suz6.mongodb.net/?retryWrites=true&w=majority', () => {
-// mongoose.connect('mongodb://localhost:27017/games', () => {
-
-    console.log('linked to mongodb')
+    console.log('linked to atlas')
 })
 
 

@@ -36,7 +36,7 @@ router.get('/edit/:id', (req, res)=>{
 
 /// UPDATE Game
 router.put('/:id', (req, res)=>{
-    Games.FindByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updateGame)=>{
+    Games.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updateGame)=>{
         res.json(updateGame)
     })
 })
